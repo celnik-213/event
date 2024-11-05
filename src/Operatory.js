@@ -33,3 +33,15 @@ console.log(false==false);
 console.log(false || false || true);
 
 console.log(true || false == false&&true);
+
+console.log(" ")
+console.log("task 4")
+console.log(" ")
+
+let a = 3;
+let b = 2;
+let c;
+c = a + b;
+console.log(c);
+console.log("zadanie 2")
+console.log(a>=0 && b>=0)
