@@ -45,3 +45,20 @@ c = a + b;
 console.log(c);
 console.log("zadanie 2")
 console.log(a>=0 && b>=0)
+
+console.log(" ")
+console.log("task 5")
+console.log(" ")
+
+let x =3;
+let y =4;
+let z =5;
+
+if(z+x>y || x+y>z || y+z>x){
+    const s = (x+y+z) /2;
+    const pole = Math.sqrt(s*(s-x)*(s-y)*(s-z));
+    console.log("Pole trójkąta wynosi: ", pole)
+}else{
+    console.log("Z podanych boków nie sposób utworzyć trójkąta.")
+}
+
