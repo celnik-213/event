@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanko</title>
+</head>
+<body>
+<script>
+    let szerokosc = window.prompt("Podaj szerokość:", "Nie podawaj jednostki");
+    szerokosc = szerokosc ? szerokosc : 20;
+    let wysokosc = window.prompt("Podaj wyokość:", "Nie podawaj jednostki");
+    wysokosc = wysokosc ? wysokosc : 10;
+    let dlugosc = window.prompt("Podaj dlugosc:", "Nie podawaj jednostki");
+    dlugosc = dlugosc ? dlugosc : 50;
+    alert("szerokość: " + szerokosc + " wysokość: " + wysokosc + " dlugość: " +  dlugosc);
+    let objetosc = szerokosc * dlugosc * wysokosc;
+    alert("Objętość pudełka wynosi: " +objetosc);
+</script>
+</body>
+</html>
