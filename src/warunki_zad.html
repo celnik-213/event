@@ -7,11 +7,30 @@
 <body>
 
 <script>
-  let liczba = prompt("Podaj liczbę: ", "dowolna liczba naturalna");
-  if(liczba>90 && liczba<110){
-    alert("BINGO!");
+  let liczba1 = parseFloat(prompt("Podaj pierwszą liczbe: "));
+  let liczba2 = parseFloat(prompt("Podaj drugą liczbę: "));
+  let wynik;
+  let wybor = prompt("Wybierz działanie", "+,-,*,/")
+  if(Number.isNaN(liczba1)==false && Number.isNaN(liczba2)==false ){
+    switch(wybor){
+      case "+":
+       wynik = liczba1 + liczba2;
+       alert(wynik+ " Wynik dodawania");
+            break;
+      case "-":
+        wynik = liczba1 - liczba2;
+        alert(wynik + " Wynik odejmowania");
+        break;
+      case "*":
+        wynik = liczba1*liczba2;
+        alert(wynik+ " Wynik mnożenia");
+        break;
+      case "/":
+        wynik = liczba1/liczba2;
+        alert(wynik + "  Wynik dzielenia");
+    }
   }else{
-    alert("PUDŁO");
+    alert("Podałeś niepoprawnę danę.")
   }
 </script>
 
